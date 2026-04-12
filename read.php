@@ -11,6 +11,14 @@ $query = mysqli_query($conn, "SELECT * FROM produk");
 <head>
     <title>Data Produk RUNORA</title>
 </head>
+<style>
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+</style>
 <body>
 
 <h2>Daftar Produk</h2>
