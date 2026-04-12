@@ -13,6 +13,6 @@ if ($conn->connect_error){
     exit();
 }
 
-echo "berhasil nyambung yey! <br>";
+// echo "berhasil nyambung yey! <br>";
 
 ?>
