@@ -30,6 +30,7 @@ th, td {
         <th>Kategori</th>
         <th>Harga</th>
         <th>Stok</th>
+        <th>Aksi</th>
     </tr>
 
     <?php while($data = mysqli_fetch_array($query)) { ?>
@@ -39,6 +40,12 @@ th, td {
         <td><?php echo $data['kategori']; ?></td>
         <td><?php echo $data['harga']; ?></td>
         <td><?php echo $data['stok']; ?></td>
+        <td>
+    <a href="delete.php?id=<?php echo $data['id']; ?>" 
+       onclick="return confirm('Yakin mau hapus?')">
+       Hapus
+    </a>
+</td>
     </tr>
     <?php } ?>
 
